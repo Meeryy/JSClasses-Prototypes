@@ -1,0 +1,13 @@
+/*Task
+
+Vytvořte v JavaScriptu strukturu, ve které budete moci evidovat obrazy v galerii. U každého obrazu znáte jeho autora, název, cenu, rok vzniku. Každý autor má svoje jméno, příjmení a datum narození. Napište metody, které určí:
+
+Celkovou cenu všech obrazů v galerii
+Autora a cenu tří nejdražších obrazu v galerii
+Název a cenu obrazu od zadaného autora, setříděné podle ceny
+Všechny autory a jejich seskupené obrazy, které namalovali
+Implementujte formu která umožní přidávat a zobrazovat prvky galerie. Také implementujte tlačítka co by zobrazovaly výsledky káždé ze čtyř výše uvedených operací.
+
+Aby forma nerefrešovala stránku po každem submitu, přídejte form.addEventListener("submit", (e) => e.preventDefault());
+
+Struktury napište jak ve formě prototypů tak i classes a provnejte rozdíl ve struktuře a i ve výpisu objektů (console.log)*/
