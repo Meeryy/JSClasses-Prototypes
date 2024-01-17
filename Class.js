@@ -1,4 +1,4 @@
-class Picture {
+/*class Picture {
     constructor(painter,name, year,price) {
         this.painter = painter;
         this.year   = year;
@@ -42,17 +42,36 @@ function MagPrice(){
     var total = 0;
     for (price in Letak) {
         total += Letak[price];
-      }
+    }
       return total;
 }
 
-var highest = Number.NEGATIVE_INFINITY;
-var tmp;
-for (var i=Letak.length-1; i>=0; i--) {
-    tmp = Letak[i].getPicture(Picture.price)
-    if (tmp > highest) 
-    highest = tmp;
-}
-console.log(highest);
 
-console.log(MagPrice());
+function threehighest(Letak){
+let highest = Number.NEGATIVE_INFINITY;
+let num2 = Number.NEGATIVE_INFINITY;
+let num3 = Number.NEGATIVE_INFINITY;
+let tmp;
+for (let i=Letak.length-1; i>=0; i++){
+    tmp = Letak[i].getPicture(Picture.price)
+    console.log(Picture.price)
+    if (Letak[i] > highest){
+     let tmp1 = highest;
+     let tmp2 = num2;
+     highest = Letak[i];
+     num2 = tmp1;
+     num3 = tmp2
+    }
+    else if (Letak[i] > num2) {
+    let tmp2 = num2;
+    num2 = Letak[i];
+    num3 = tmp2;
+  } else if (Letak[i] > num3) {
+    num3 = Letak[i];
+  }
+  return [highest, num2, num3]
+  }
+}
+console.log(threehighest);
+
+console.log(MagPrice());*/
